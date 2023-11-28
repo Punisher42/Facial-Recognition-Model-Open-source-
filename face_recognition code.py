@@ -5,7 +5,7 @@ import csv
 from datetime import datetime
 
 vid_cap = cv2.VideoCapture(0)
-my_img = face_recognition.load_image_file("your picture file/directory")
+my_img = face_recognition.load_image_file("your picture.jpg")
 my_encoding = face_recognition.face_encodings(my_img)[0]
 
 known_face_encodings = [my_encoding]
